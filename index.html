@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Law Firm</title>
+</head>
+
+<body>
+    <nav class="navBar" onscroll='navScroll'>
+        <div class="navSec-1">
+            <h5>H<br />Harbrow Law</h5>
+        </div>
+        <div class="navSec-2">
+            <img width="20%" src="https://img.icons8.com/891111/ios11/2x/phone.png" alt="phone">
+            <h5>123-456-7890</h5>
+        </div>
+
+        <div class="navSec-3">
+            <a href="#Home">
+                <h5>Home</h5>
+            </a>
+            <a href="#About">
+                <h5>About</h5>
+            </a>
+            <a href="#Practices">
+                <h5>Practices</h5>
+            </a>
+            <a href="#Resources">
+                <h5>Resources</h5>
+            </a>
+
+            <button>Contact Us</button>
+        </div>
+    </nav>
+    <main class="home">
+        <section class="homeSec-1">
+            <div class="secOne-d1">
+                <h1>Get Back To Being You</h1>
+                <h3>We handle the hard work so you don't have to</h3>
+                <button>Book a Free Consultation</button>
+            </div>
+
+            <div class="imgCont-1">
+                <img width="90%" src="./assets/attOne.svg" alt="attOne">
+            </div>
+        </section>
+        <section id="About">
+            <div class="aboutHeader">
+                <h1>Who We Are</h1>
+            </div>
+            <div class="employeeSec">
+                <container class="card">
+                    <img src="/assets/attCard3.svg" alt="">
+                    <div class="cardBot">
+                        <h4>
+                            John Harbrow
+                        </h4>
+                        <h5>Founder</h5>
+                    </div>
+                </container>
+                <container class="card">
+                    <img src="/assets/attCard2.svg" alt="">
+                    <div class="cardBot">
+                        <h4>
+                            John Harbrow
+                        </h4>
+                        <h5>Founder</h5>
+                    </div>
+                </container>
+                <container class="card">
+                    <img src="/assets/attCard1.svg" alt="">
+                    <div class="cardBot">
+                        <h4>
+                            John Harbrow
+                        </h4>
+                        <h5>Founder</h5>
+                    </div>
+                </container>
+            </div>
+        </section>
+    </main>
+    <script>
+        window.addEventListener('scroll', function(){
+            let nav = document.querySelector('nav')
+            nav.classList.toggle('navScroll')
+        })
+    </script>
+</body>
+    
+</html>
