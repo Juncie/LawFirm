@@ -1,107 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width= , initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <title>Law Firm</title>
-</head>
+  </head>
 
-<body>
-    <nav class="navBar" onscroll='navScroll'>
-        <div class="navSec-1">
-            <h5>H<br />Harbrow Law</h5>
-        </div>
-        <div class="navSec-2">
-            <img width="20%" src="https://img.icons8.com/891111/ios11/2x/phone.png" alt="phone">
-            <h5>123-456-7890</h5>
-        </div>
-
-        <div class="navSec-3">
-            <a href="#Home">
-                <h5>Home</h5>
-            </a>
-            <a href="#About">
-                <h5>About</h5>
-            </a>
-            <a href="#Practices">
-                <h5>Practices</h5>
-            </a>
-            <a href="#Resources">
-                <h5>Resources</h5>
-            </a>
-
-            <button>Contact Us</button>
-        </div>
+  <body>
+    <nav class="navbar nav">
+      <a class="navbar-brand" href="#Home">
+        <img width="70%" src="./assets/Law Logo.png" alt="Law" />
+      </a>
+      <div class="navPhoneNum">
+        <img width="25%" src="https://img.icons8.com/891111/ios11/2x/phone.png" alt="phone" />
+        <h5>480-909-1382</h5>
+      </div>
+      <div class="navLinks">
+        <h5><a href="#Home">Home</a></h5>
+        <h5><a href="#About">About</a></h5>
+        <h5><a href="#Practices">Practices</a></h5>
+        <h5><a href="#Testimonies">Resources</a></h5>
+      </div>
+      <div class="contactBttn">
+        <button class="btn btn-danger">Contact Us</button>
+      </div>
     </nav>
-    <main id='Home' class="home">
-        <section class="homeSec-1">
-            <div class="secOne-d1">
-                <h1>Get Back To Being You.</h1>
-                <!-- <div class="d-overlay"></div> -->
-                <h3>We handle the hard work so you don't have to</h3>
-                <button class="getStarted-bttn">Book a Free Consultation</button>
-            </div>
+    <main id="Home" class="home">
+      <section class="homeSec-1">
+        <div class="secOne-d1">
+          <div>
+            <h1>Get Back To Being You.</h1>
+            <h3 class="tagline">We handle the hard work so you don't have to</h3>
+          </div>
+          <button class="btn btn-danger btn-lg">Book a Free Consultation</button>
+        </div>
 
-            <div class="imgCont-1">
-                <img src="./assets/attOne.svg" alt="attOne">
+        <div class="imgCont-1">
+          <img width="90%" src="./assets/attOne.svg" alt="attOne" />
+        </div>
+      </section>
+      <section id="About">
+        <div class="aboutHeader">
+          <h1>Who We Are</h1>
+        </div>
+        <div class="employeeSec">
+          <div class="card-1">
+            <img src="/assets/attCard3.svg" alt="" />
+            <div class="cardBot">
+              <h3>John Harbrow</h3>
+              <hr width="75%" />
+              <h6>Founder</h6>
             </div>
-        </section>
-        <section id="About">
-            <div class="aboutHeader">
-                    <h1>Who We Are</h1>
+          </div>
+          <container class="card-1">
+            <img src="/assets/attCard2.svg" alt="" />
+            <div class="cardBot">
+              <h3>Walter Mann</h3>
+              <hr width="75%" />
+              <h6>Injury Lawyer</h6>
             </div>
-            <div class="employeeSec">
-                <div  class="card">
-                    <img src="/assets/attCard3.svg" alt="">
-                    <div class="cardBot">
-                        <h2>
-                            John Harbrow
-                        </h2>
-                        <hr width="75%">
-                        <h4>Founder</h4>
-                    </div>
+          </container>
+          <container class="card-1">
+            <img src="/assets/attCard1.svg" alt="" />
+            <div class="cardBot">
+              <h3>Julio Vasques</h3>
+              <hr width="75%" />
+              <h6>Personal Attorney</h6>
+            </div>
+          </container>
+        </div>
+      </section>
+      <section id="Practices">
+        <div class="practiceHeader">
+          <h1>Our Practices</h1>
+        </div>
+        <div class="practiceList">
+          <div class="practiceCard">
+            <img src="https://img.icons8.com/891111/ios11/2x/car.png" alt="" />
+            <h2>Traffic Violations</h2>
+          </div>
+          <div class="practiceCard">
+            <img src="https://img.icons8.com/891111/ios11/2x/clenched-fist.png" alt="" />
+            <h2>Assaults & Threats</h2>
+          </div>
+          <div class="practiceCard">
+            <img src="https://img.icons8.com/891111/ios11/2x/money-bag.png" alt="" />
+            <h2>Bankruptcy</h2>
+          </div>
+          <div class="practiceCard">
+            <img src="https://img.icons8.com/891111/ios_filled/2x/handcuffs.png" alt="" />
+            <h2>Criminal Defense</h2>
+          </div>
+        </div>
+      </section>
+      <section id="Testimonies">
+        <div class="darkBG">
+          <h1 class="tHead">Hear From Our Clients</h1>
+          <hr width="40%" />
+          <div class="quoteSec">
+              <div class="quoteCard">
+                <div class="topQuote">
+                    <img src="https://img.icons8.com/891111/m_sharp/2x/quote-right.png" alt="Top quote">
                 </div>
-                <container class="card">
-                    <img src="/assets/attCard2.svg" alt="">
-                    <div class="cardBot">
-                        <h2>
-                             Walter Mann
-                        </h2>
-                        <hr width="75%">
-                        <h4>Injury Lawyer</h4>
-                    </div>
-                </container>
-                <container class="card">
-                    <img src="/assets/attCard1.svg" alt="">
-                    <div class="cardBot">
-                        <h2>
-                            Julio Vasques
-                        </h2>
-                        <hr width="75%">
-                        <h4>Personal Attorney</h4>
-                    </div>
-                </container>
-            </div>
-        </section>
-        <section id="Practices">
-            <h1>Our Practices</h1>
-            <ol>
-                <li> <img src="https://img.icons8.com/891111/m_sharp/2x/car.png" alt=""> Traffic Violations</li>
-                <li> <img src="https://img.icons8.com/891111/ios11/2x/clenched-fist.png" alt=""> Assaults & Threats</li>
-                <li> <img src="https://img.icons8.com/891111/ios11/2x/money-bag.png" alt=""> Bankruptcy</li>
-                <li> <img src="https://img.icons8.com/891111/ios_filled/2x/handcuffs.png" alt=""> Criminal Defense</li>
-            </ol>
-        </section>
+              
+                <div class="quote">
+                  <p>
+                      If you’ve been struck in a car accident whether you’re at fault or not, Harbrow is who I would
+                      recommend to protect you against any unforseen issues with insurance companies or hospital
+                      bills.
+                  </p>
+                    <h5 class="quoteAuthor">-Matt Wayne</h5>
+                </div>
+                <div class="bottomQuote">
+                    <img src="https://img.icons8.com/891111/m_sharp/2x/quote-left.png" alt="Bottom quote">
+                </div>
+              
+              </div>
+              <div class="quoteCard">
+                <div class="topQuote">
+                    <img src="https://img.icons8.com/891111/m_sharp/2x/quote-right.png" alt="Top quote">
+                </div>
+              
+                <div class="quote">
+                  <p>
+                      If you’ve been struck in a car accident whether you’re at fault or not, Harbrow is who I would
+                      recommend to protect you against any unforseen issues with insurance companies or hospital
+                      bills.
+                  </p>
+                    <h5 class="quoteAuthor">-Matt Wayne</h5>
+                </div>
+                <div class="bottomQuote">
+                    <img src="https://img.icons8.com/891111/m_sharp/2x/quote-left.png" alt="Bottom quote">
+                </div>
+          </div>
+        <div class="redBG">
+            <div class="quoteCard">
+                <div class="topQuote">
+                    <img src="https://img.icons8.com/FFFFFF/m_sharp/2x/quote-right.png" alt="Top quote">
+                </div>
+              
+                <div class="quote">
+                  <p>
+                      If you’ve been struck in a car accident whether you’re at fault or not, Harbrow is who I would
+                      recommend to protect you against any unforseen issues with insurance companies or hospital
+                      bills.
+                  </p>
+                    <h5 class="quoteAuthor">-Matt Wayne</h5>
+                </div>
+                <div class="bottomQuote">
+                    <img src="https://img.icons8.com/FFFFFF/m_sharp/2x/quote-left.png" alt="Bottom quote">
+                </div>
+              
+              </div>
+              <div class="quoteCard">
+                <div class="topQuote">
+                    <img src="https://img.icons8.com/FFFFFF/m_sharp/2x/quote-right.png" alt="Top quote">
+                </div>
+              
+                <div class="quote">
+                  <p>
+                      If you’ve been struck in a car accident whether you’re at fault or not, Harbrow is who I would
+                      recommend to protect you against any unforseen issues with insurance companies or hospital
+                      bills.
+                  </p>
+                    <h5 class="quoteAuthor">-Matt Wayne</h5>
+                </div>
+                <div class="bottomQuote">
+                    <img src="https://img.icons8.com/FFFFFF/m_sharp/2x/quote-left.png alt="Bottom quote">
+                </div>
+          </div>
+        </div>
+          </div>
+
+        
+      </section>
     </main>
-    <script>
-        window.addEventListener('scroll', function(){
-            let nav = document.querySelector('nav')
-            nav.classList.toggle('navScroll', window.scrollY > 0)
-        })
-    </script>
-</body>
-    
+    <script src="./navBar.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
